@@ -2,7 +2,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import AuthNav from './components/auth-nav';
-import { Home, Dashboard } from "./views";
+import { Home, Dashboard } from './views';
+import ProtectedRoute from './auth/protected-route';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/dashboard" exact component={Dashboard} />
+          <ProtectedRoute path="/dashboard" exact component={Dashboard} />
         </Switch>
       </div>
     </div>
