@@ -8,10 +8,10 @@ const Home = () => {
   const { isAuthenticated } = useAuth0();
   return (
     <React.Fragment>
-      <h1>Home</h1>
+      <h1>Hello</h1>
       { isAuthenticated ? '' : (
         <React.Fragment>
-          <p>Please login</p>
+          <p>Please login to continue</p>
           <LoginButton />
         </React.Fragment>
       )}

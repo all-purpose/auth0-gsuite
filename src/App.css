@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap");
+
+@font-face {
+  font-family: "Heldane Text Regular";
+  src: url("./fonts/heldane-text-web-regular.eot?#iefix");
+  src: url("./fonts/heldane-text-web-regular.eot?#iefix") format("eot"),
+    url("./fonts/heldane-text-web-regular.woff2") format("woff2"),
+    url("./fonts/heldane-text-web-regular.woff") format("woff");
+}
+
+body {
+  padding: 1rem;
+  font-family: Inter;
+  text-align: center;
+}
+header {
+  text-align: right;
+}
+h1 {
+  font-family: "Heldane Text Regular";
+  font-size: 6rem;
+  margin: 6rem 0 0;
+}
+button {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
